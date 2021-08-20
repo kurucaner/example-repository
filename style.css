@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  line-height: 1.6;
+  background:linear-gradient(to right, white, white);
   width: 100%;
   height: 100%;
   margin: 0;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+
 
 .container > .mySlides img {
   width: 200px;
@@ -19,37 +41,64 @@ body {
   transform: translate(-50%, -50%);
 }
 
-nav {
-  text-align: right !important;
-  padding: 10px;
-}
-
-nav a {
-  color: rgb(112, 164, 231);
-  padding-left: 15px;
-  font-weight: lighter;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-}
-
-h1 {
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-h2 {
-  text-align: center;
-  color: rgb(140, 181, 235);
-  font-family: Arial, Helvetica, sans-serif;
+.navbar ul {
+  display: flex;
 }
 
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+
 p {
+  margin: 10px 0;
   font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.navbar {
+  background-color: #362b34;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar .flex{
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+img {
+  width: 100%;
 }
 
 .centerimg {
@@ -116,7 +165,7 @@ p {
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 40px;
   border-radius: 3px 0 0 3px;
 }
 
